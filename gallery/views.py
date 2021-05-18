@@ -6,7 +6,7 @@ from .models import Image, Location, Category
 # Create your views here.
 
 def index(request):
-    images = Image.get_all_images()
+    images = Image.objects.all()
     locations = Location.objects.all()
     title = 'Sunsplash'
 

@@ -10,10 +10,18 @@
   <title>Fashionsplash | {{title}}</title>
   {% else %}
     <title> Fashionsplash </title>
+
+    <script>
+      UPLOADCARE_PUBLIC_KEY = '164769ad7c4f81a6b62a';
+    </script>
+    
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  
   {% endif %}
 
   {% block styles %}
     {% bootstrap_css %}
+
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Roboto:300,400,700|PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- CSS only -->
@@ -23,6 +31,9 @@
     <link href='//fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <input type="hidden" role="uploadcare-uploader" />
+
   {% endblock %}
 
 
