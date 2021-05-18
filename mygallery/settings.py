@@ -92,8 +92,8 @@ WSGI_APPLICATION = 'mygallery.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
+if config('MODE')=="dev":
+    DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
            'NAME':'gallery',
