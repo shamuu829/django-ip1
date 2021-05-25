@@ -25,15 +25,7 @@ Admin can upload images from a django dashboard
 - Postgressql
 - Heroku
 
-# Prerequisite
 
-Django Framework
-
-Python3.8
-
-Postgres
-
-Python virtualenv
 
 # contributor
 
